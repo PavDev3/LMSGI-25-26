@@ -1,0 +1,154 @@
+* {
+    font-family: var(--font-family);
+}
+
+/* body para el cuerpo de la pagina */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-light)
+}
+
+
+/* header para el encabezado de la pagina */
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.nav {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    display: flex;
+    gap: 1rem;
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+/* nav para el menu de la pagina */
+.nav a {
+    color: var(--color-light);
+    text-decoration: none;
+    border: 1px solid var(--color-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+}
+
+.nav a.active {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+/* container para el contenido de la pagina */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-light);
+}
+
+/* footer para el pie de pagina de la pagina */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    z-index: 1000;
+}
+
+/* Estilos para el ejemplo de flexbox */
+.content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 6rem; /* Espacio para el footer fijo */
+}
+
+.content h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-accent);
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+.flex-item {
+    flex: 1;
+    background-color: var(--color-light);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--color-primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flex-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.flex-item h3 {
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.flex-item p {
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+.btn {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+}
